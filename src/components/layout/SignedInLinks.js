@@ -5,7 +5,7 @@ function SignedInLinks() {
   return (
     <ul className="right">
       <li>
-        <NavLink to="/">New Article</NavLink>
+        <NavLink to="/create">New Article</NavLink>
       </li>
       <li>
         <NavLink to="/">Log Out</NavLink>

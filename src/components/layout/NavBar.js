@@ -5,9 +5,9 @@ import SingedOutLink from "./SignedOutLinks";
 
 function NavBar() {
   return (
-    <nav className="nav.nav-wrapper grey">
+    <nav className="nav.nav-wrapper grey darken-3">
       <div className="container">
-        <Link to="/" className="brand-logo">
+        <Link to="/" className="brand-logo-right">
           Article
         </Link>
         <SingedInLinks />
