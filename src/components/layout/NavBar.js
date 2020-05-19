@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SingedInLinks from "./SignedInLinks";
-import SingedOutLink from "./SignedOutLinks";
+import SignedInLinks from "./SignedInLinks";
+import SignedOutLinks from "./SignedOutLinks";
 
-function NavBar() {
+const Navbar = () => {
   return (
-    <nav className="nav.nav-wrapper grey darken-3">
+    <nav className="nav-wrapper grey darken-3">
       <div className="container">
-        <Link to="/" className="brand-logo-right">
-          Article
+        <Link to="/" className="brand-logo left">
+          Articles
         </Link>
-        <SingedInLinks />
-        <SingedOutLink />
+        <SignedInLinks />
+        <SignedOutLinks />
       </div>
     </nav>
   );
-}
+};
 
-export default NavBar;
+export default Navbar;

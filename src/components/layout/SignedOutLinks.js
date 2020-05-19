@@ -1,17 +1,15 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-function SignedOutLinks() {
+const SignedOutLinks = () => {
   return (
-    <ul className="right">
-      <li>
-        <NavLink to="/signup">Signup</NavLink>
-      </li>
-      <li>
-        <NavLink to="/signin">LogIn</NavLink>
-      </li>
-    </ul>
-  );
+    <div>
+      <ul className="right">
+        <li><NavLink to='/signup'>Signup</NavLink></li>
+        <li><NavLink to='/signin'>Login</NavLink></li>
+      </ul>
+    </div>
+  )
 }
 
-export default SignedOutLinks;
+export default SignedOutLinks

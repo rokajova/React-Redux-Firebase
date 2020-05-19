@@ -1,22 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function SignedInLinks() {
+const SignedInLinks = () => {
   return (
-    <ul className="right">
-      <li>
-        <NavLink to="/create">New Article</NavLink>
-      </li>
-      <li>
-        <NavLink to="/">Log Out</NavLink>
-      </li>
-      <li>
-        <NavLink to="/" className="btn btn-floating blue darken-2">
-          rj
-        </NavLink>
-      </li>
-    </ul>
+    <div>
+      <ul className="right">
+        <li>
+          <NavLink to="/create">New Project</NavLink>
+        </li>
+        <li>
+          <NavLink to="/">Log Out</NavLink>
+        </li>
+        <li>
+          <NavLink to="/" className="btn btn-floating pink lighten-1">
+            RJ
+          </NavLink>
+        </li>
+      </ul>
+    </div>
   );
-}
+};
 
 export default SignedInLinks;

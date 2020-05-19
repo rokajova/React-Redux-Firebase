@@ -1,10 +1,12 @@
-import authReducer from "./authReducer";
-import projectReducer from "./projectReducer";
-import { combineReducers } from "redux";
+import authReducer from './authReducer'
+import projectReducer from './projectReducer'
+import { combineReducers } from 'redux'
 
 const rootReducer = combineReducers({
   auth: authReducer,
-  projec: projectReducer,
+  project: projectReducer
 });
 
-export default rootReducer;
+export default rootReducer
+
+// the key name will be the data property on the state object
