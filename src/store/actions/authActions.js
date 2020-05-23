@@ -22,6 +22,7 @@ export const signOut = () => {
       .then(() => {
         dispatch({ type: "SIGNOUT_SUCCESS" });
       });
+    firebase.logout(); // Fixed the problem, but is this needed?
   };
 };
 
